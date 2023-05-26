@@ -9,5 +9,4 @@ def solution(skill, skill_trees):
         if skill[:len(string)] == string:
             answer+=1
             
-
     return answer
