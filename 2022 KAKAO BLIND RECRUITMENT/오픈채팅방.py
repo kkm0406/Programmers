@@ -16,5 +16,4 @@ def solution(records):
         uid, msg = record
         result.append(f"{users[uid]}"+msg)
 
-    
     return result
