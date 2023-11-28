@@ -1,8 +1,8 @@
 def solution(id_list, report, k):
     answer = []
-    alarm = {}
-    cnt = {}
+    alarm, cnt = {}, {}
     report = list(set(report))
+    
     for id in id_list:
         cnt[id] = 0
         alarm[id] = []
@@ -18,4 +18,5 @@ def solution(id_list, report, k):
             
     for id in id_list:
         answer.append(len(alarm[id]))
+        
     return answer
